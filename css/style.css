@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #66CCFF;
+    color: rgb(0, 0, 0);
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header h1 {
+    margin: 0.5em 0;
+}
+
+.hero {
+    background-image: url('../img/');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 4em 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero .btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+section {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.destinations-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    width: 30%;
+    margin: 1em 0;
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tours-list {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tour {
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    .destinations-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination {
+        width: 80%;
+    }
+}
