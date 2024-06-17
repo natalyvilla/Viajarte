@@ -1,0 +1,257 @@
+body{
+    margin: 0px;
+    background-color: white;
+}
+h1{
+    color: gray;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 100px;
+}
+.divencabezado{
+    background-color: rgb(243, 243, 243);
+}
+.botones{
+    margin-top: 40px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.bot1{
+    padding: 10px 30px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: webkit-inline-flex;
+}
+.bot2{
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: webkit-inline-flex;
+}
+.img1{
+    margin-top: 70px;
+    width: 470px;
+    height: 320px;
+    margin-left: 150px;
+    border-radius: 15px;
+}
+.contenedor1{
+    display: flex;
+    margin: 0;
+    background-color: white;
+}
+.img1rep{
+    margin-right: 85px;
+}
+.parrafo{
+    margin-top: 40px;
+    font-size: 15.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+   color:  #ff6600; 
+   text-decoration: none;
+}
+section{
+    width: 650px;
+    padding: 20px;
+    background: white;
+    margin-left: 120px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+summary{
+    background: rgb(218, 216, 216);
+    color: #ff6600;
+    padding: 17px;
+    list-style: none;
+    cursor: pointer;
+}
+.acordion p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.acordionyimgtermales{
+    display: flex;
+    margin: 0;
+    background-color: white;
+}
+.imgtermalessr{
+    width: 370px;
+    height: 300px;
+    border-radius: 25px;
+}
+.hospedaje{
+    padding: 10px 30px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: webkit-inline-flex;
+    margin-block: 50px;
+}
+.main-header {
+    background: #042546;
+    color: #fbfbfb;
+    display: flex;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px; 
+    position: relative;
+    overflow: hidden;
+    height: 150px; 
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.header-image { 
+    position: absolute;
+    left: 20px;
+    top: -20px}
+
+.header-image img {
+    width: 200px; 
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-menu {
+    position: absolute;
+    bottom: 20px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ffffff; 
+    background-color: #003366;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #ff9d00;
+    color: #ffffff;
+}
+.footer {
+    background-color: #296600;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+} 
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.3);
+    color: #0dfffb;
+}
+.footer::before, .footer::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(49, 157, 96, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.footer::before {
+    animation: animateBefore 5s linear infinite;
+}
+
+.footer::after {
+    animation: animateAfter 5s linear infinite;
+}
+
+@keyframes animateBefore {
+    0% {
+        transform: translateX(-100%) translateY(-100%);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%);
+    }
+}
+
+@keyframes animateAfter {
+    0% {
+        transform: translateX(100%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-100%) translateY(-100%);
+    }
+}

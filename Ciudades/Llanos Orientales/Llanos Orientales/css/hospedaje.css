@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../img/fondo.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.btn {
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%); 
+    padding: 10px 20px; 
+    background-color: #FF6600;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+}
+
+h2, h5 {
+    color: #555;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+.rating .fa-star {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.checked {
+    color: orange;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    height: 840px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.page-title {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}   
+
+.page-title h1 {
+    margin: 0;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+}
