@@ -128,6 +128,9 @@
   margin: 1em 0;
   border-radius: 5px;
 }
+.btn {
+  background-color: #ff6347;
+}
 
 @media (max-width: 768px) {
   .destinations-grid {
@@ -141,7 +144,7 @@
 }
 
 .footer {
-  background-color: #003366;
+  background-color: #296600;
   color: #fff;
   padding: 40px 0;
   text-align: center;
@@ -159,6 +162,22 @@
   margin-bottom: 10px;
 }
 
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.3);
+  color: #0dfffb;
+}
 .footer::before,
 .footer::after {
   content: "";
@@ -167,7 +186,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(49, 141, 157, 0.1);
+  background: rgba(49, 157, 96, 0.1);
   z-index: 1;
   pointer-events: none;
 }
