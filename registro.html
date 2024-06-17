@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="css/registro.css" />
+  </head>
+  <body>
+    <a href="inicio.html" class="floating-btn">Inicio</a>
+    <div class="container">
+      <div class="form-container left">
+        <form action="#">
+          <h2>Registro</h2>
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="text" placeholder="Correo electrónico" required />
+          <input type="text" placeholder="Nombre de usuario" required />
+          <input type="password" placeholder="Contraseña" required />
+          <select required>
+            <option value="">Selecciona tu ciudad</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Medellín">Medellín</option>
+            <option value="Cali">Cali</option>
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Cartagena">Cartagena</option>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Pereira">Pereira</option>
+            <option value="Santa Marta">Santa Marta</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Cúcuta">Cúcuta</option>
+            <option value="Villavicencio">Villavicencio</option>
+            <option value="Ibagué">Ibagué</option>
+            <option value="Pasto">Pasto</option>
+            <option value="Neiva">Neiva</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Sincelejo">Sincelejo</option>
+            <option value="Popayán">Popayán</option>
+            <option value="Valledupar">Valledupar</option>
+            <option value="Montería">Montería</option>
+            <option value="Tunja">Tunja</option>
+          </select>
+          <button type="submit">Registrarse</button>
+          <button type="button" class="switch-btn" onclick="toggleForm()">
+            Iniciar Sesión
+          </button>
+        </form>
+      </div>
+      <div class="form-container right">
+        <form action="#">
+          <h2>Iniciar Sesión</h2>
+          <input
+            type="text"
+            placeholder="Nombre de usuario o correo electrónico"
+            required
+          />
+          <input type="password" placeholder="Contraseña" required />
+          <button type="submit">Iniciar Sesión</button>
+          <button type="button" class="switch-btn" onclick="toggleForm()">
+            Registrarse
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function toggleForm() {
+        const containers = document.querySelectorAll(".form-container");
+        containers.forEach((container) => container.classList.toggle("left"));
+        containers.forEach((container) => container.classList.toggle("right"));
+      }
+    </script>
+  </body>
+</html>

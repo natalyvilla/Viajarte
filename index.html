@@ -3,29 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIajArte</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>ViajArte</title>
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="header-content">
-        <div class="header-image">
-          <img src="descargar.png" alt="Imagen de encabezado" />
-        </div>
         <div class="logo">
-          <h1>Mi Sitio Web</h1>
+          <h1>ViajArte</h1>
         </div>
       </div>
       <nav class="nav-menu">
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Contactanos</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="registro.html">Registrarse</a></li>
         </ul>
       </nav>
     </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/Eje Cafetero.jpg"
+            class="d-block w-100 d-img"
+            alt="slider 1"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase">Descubre la ciudad</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Cartagena</h1>
+            <button class="btn btn-primary px-4 py-2 mt-5">Informacion</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/Llanos orientales.png"
+            class="d-block w-100 d-img"
+            alt="slider 1"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase">Descubre la ciudad</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Cartagena</h1>
+            <button class="btn btn-primary px-4 py-2 mt-5">Informacion</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/Santa Marta.jpg"
+            class="d-block w-100 d-img"
+            alt="slider 1"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase">Descubre la ciudad</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Cartagena</h1>
+            <button class="btn btn-primary px-4 py-2 mt-5">Informacion</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <section id="home">
       <div class="hero">
@@ -36,53 +113,51 @@
     </section>
 
     <section id="destinations">
-      <h2>Tours Populares</h2>
+      <h2>Destinos más visitados.</h2>
       <div class="destinations-grid">
         <div class="destination">
-          <img src="img/coveñas.jpg" alt="Coveñas" />
-          <h3>Coveñas, Sucre.</h3>
-          <p>Descripcion</p>
+          <img src="img/Capurgana.jpg" alt="" />
+          <h3>Capurganá.</h3>
+          <a class="btn btn-primary" href="Ciudades/Capurganá/capurganá.html"
+            >Conocer más.</a
+          >
         </div>
         <div class="destination">
-          <img src="img/cartagena.jpeg" alt="Cartagena" />
-          <h3>Cartagena, Bolívar</h3>
-          <p>Descripcion</p>
+          <img src="img/Desierto La Tatacoa.jpg" alt="" />
+          <h3>Desierto La Tatacoa.</h3>
+          <a
+            class="btn btn-primary"
+            href="Ciudades/Desierto de la Tatacoa/desiertodelatatacoa.html"
+            >Conocer más.</a
+          >
         </div>
         <div class="destination">
-          <img src="img/Santa Marta.jpg" alt="Santa Marta" />
-          <h3>Santa Marta, Magdalena .</h3>
-          <p>Descricpion</p>
+          <img src="img/San Andrés.jpg" alt="" />
+          <h3>San Andrés.</h3>
+          <a class="btn btn-primary" href="Ciudades/San Andrés/sanandres.html"
+            >Conocer más</a
+          >
         </div>
       </div>
     </section>
-    <div class="Carrusel">
-      <div class="container-carousel">
-        <div class="carruseles" id="slider">
-            <section class="slider-section">
-                <img src="img/cartagena.jpeg">
-            </section>
-            <section class="slider-section">
-                <img src="img/cartagena.jpeg">
-            </section>
-            <section class="slider-section">
-                <img src="img/cartagena.jpeg">
-            </section>
-        </div>
-        <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
-        <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
-      </div>
-    </div>
 
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <h2>Contacta con Nosotros</h2>
-          <p>Email: contacto@gmail</p>
-          <p>Teléfono:#####</p>
+          <p>Email: viajarte@gmail.com</p>
+          <p>Teléfono: 3163908037</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
         </div>
       </div>
     </footer>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <script src="css/script.js"></script>
   </body>
 </html>
